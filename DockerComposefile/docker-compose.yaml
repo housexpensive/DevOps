@@ -1,5 +1,5 @@
 version: '3'
-serivces:
+services:
   nginx-service:
     container_name: 'webnginx'
     image: 'nginx'
@@ -11,5 +11,4 @@ serivces:
     container_name: 'dbmysql'
     image: 'mysql:8.0.15'
     environment:
-      - MYSQL_ROOT_PASSWORD: newroot
-      
+      - MYSQL_ROOT_PASSWORD:newroot
