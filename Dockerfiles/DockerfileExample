@@ -1,8 +1,9 @@
 FROM <image>[:<tag>]
-RUN <command>
+RUN <command> >> command on image
 EXPOSE <port>
 COPY <local_path> <container_path>
 ENV <key> <value>
 CMD command param1 param2 >>When container start
 WORKDIR /path/to/workdir >>Path on container
 VOLUME /path >>Path on Container
+docker build -t <tag> <path>
