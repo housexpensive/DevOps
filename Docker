@@ -14,3 +14,48 @@ Before Run need to remove docker webnginx old
 $docker stop webnginx
 $docker rm webnginx
 $docker run --name webnginx -v /c/Users/Public/webroot:/usr/share/nginx/html -p 81:80 -d nginx
+
+List Image local
+$docker images
+$docker image ls
+List Image on hub.docker.com
+$docker search nginx
+
+stop all container
+$docker stop $(docker ps -a -q)
+
+prune image destroy everythings
+$docker prune
+
+Exec container
+$docker exec -it <container> <command>
+-it interactive
+<command> execute in container
+
+Docker Inspect
+$docker inspect <container>
+
+Docker command logs
+$docker logs -f webnginx
+
+Remove
+$docker rm <container>
+$docker rmi <image ls>
+$docker rm $(docker ps -a -q) remove all stopped container
+
+Docker Network
+$docker network ls
+Run in Network
+$docker run --network <network> <image>
+
+Docker Parameter -e [Environment]
+-e depends on Docker Image provide to any variables ex. DB Password or any config each environment
+Test with my sql
+$docker run --name dbmysql -e MYSQL_ROOT_PASSWORD=newroot -d mysql
+$docker exec -it dbmysql bash
+#mysql -uroot -p
+Enter password:newroot
+mysql> show databases;
+
+
+
