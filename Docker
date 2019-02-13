@@ -57,5 +57,10 @@ $docker exec -it dbmysql bash
 Enter password:newroot
 mysql> show databases;
 
-
-
+Docker Compose run
+go to composefile directory 
+        DevOps/DockerComposefile/docker-compose.yaml
+$docker-compose up -d
+$docker-compose logs
+Stop compose
+$docker-compose down
