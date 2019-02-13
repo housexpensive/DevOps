@@ -11,4 +11,4 @@ services:
     container_name: 'dbmysql'
     image: 'mysql:8.0.15'
     environment:
-      - MYSQL_ROOT_PASSWORD:newroot
+      - MYSQL_ROOT_PASSWORD=newroot
