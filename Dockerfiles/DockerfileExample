@@ -1,0 +1,8 @@
+FROM <image>[:<tag>]
+RUN <command>
+EXPOSE <port>
+COPY <local_path> <container_path>
+ENV <key> <value>
+CMD command param1 param2 >>When container start
+WORKDIR /path/to/workdir >>Path on container
+VOLUME /path >>Path on Container
