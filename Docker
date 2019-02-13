@@ -10,5 +10,7 @@ $docker exec -it webnginx bash
 Mapping Path "Hostpath:Containerpath"
 /c/Users/Public/webroot:/usr/share/nginx/html
 Run Docker Again
+Before Run need to remove docker webnginx old
+$docker stop webnginx
+$docker rm webnginx
 $docker run --name webnginx -v /c/Users/Public/webroot:/usr/share/nginx/html -p 81:80 -d nginx
-
