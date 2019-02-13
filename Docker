@@ -1,0 +1,14 @@
+$docker run --name webnginx -p 81:80 -d nginx
+$docker ps
+$docker ps -a
+
+Volume
+Windows host volume : /c/Users/Public/webroot
+Go to inside docker to list path
+$docker exec -it webnginx bash
+#cd /usr/share/nginx/html
+Mapping Path "Hostpath:Containerpath"
+/c/Users/Public/webroot:/usr/share/nginx/html
+Run Docker Again
+$docker run --name webnginx -v /c/Users/Public/webroot:/usr/share/nginx/html -p 81:80 -d nginx
+
