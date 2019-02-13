@@ -62,5 +62,10 @@ go to composefile directory
         DevOps/DockerComposefile/docker-compose.yaml
 $docker-compose up -d
 $docker-compose logs
+$docker-compose ps
 Stop compose
 $docker-compose down
+Stop partial
+$docker-compose stop nginx-service <<<< service on docker-compose.yaml
+$docker-compose start nginx-service
+
