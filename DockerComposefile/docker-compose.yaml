@@ -1,1 +1,15 @@
-
+version: '3'
+serivces:
+  nginx-service:
+    container_name: 'webnginx'
+    image: 'nginx'
+    ports:
+      - 81:80
+    volumes:
+      - /c/Users/Public/webroot:/usr/share/nginx/html
+  mysql-service:
+    container_name: 'dbmysql'
+    image: 'mysql:8.0.15'
+    environment:
+      - MYSQL_ROOT_PASSWORD: newroot
+      
