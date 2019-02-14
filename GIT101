@@ -1,0 +1,15 @@
+In Git Local
+go to Directory Project
+$mkdir demo
+$cd demo
+$echo hello > README.md
+$git init
+$git add README.md
+
+$git config --global user.email "housexpensive@gmail.com"
+$git config --global user.name "housexpensive"
+
+$git commit -m "first commit"
+$git remote add origin https://github.com/housexpensive/Devops-Trainng.git
+Interface Username password
+$git push -u origin master
