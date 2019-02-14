@@ -1,0 +1,5 @@
+$docker build -t my_web .
+$docker image ls
+my_web
+$docker run --name my_web_svr -p 90:80 -d my_web
+$docker ps -a
