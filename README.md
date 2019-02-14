@@ -1,2 +1,0 @@
-# DevOps
-DevOpsTrainng[SW Park]
